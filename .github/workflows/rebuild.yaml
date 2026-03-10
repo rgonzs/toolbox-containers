@@ -15,5 +15,6 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           context: .
+          file: Containerfile.fedora43
           push: true
-          tags: ${{ var.REGISTRY_URL }}:fedora43
+          tags: ${{ env.REGISTRY_URL }}:fedora43
