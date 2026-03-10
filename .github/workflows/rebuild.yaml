@@ -17,4 +17,4 @@ jobs:
           context: .
           file: Containerfile.fedora43
           push: true
-          tags: ${{ env.REGISTRY_URL }}:fedora43
+          tags: ${{ vars.REGISTRY_URL }}:fedora43
